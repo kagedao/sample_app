@@ -60,3 +60,7 @@ gem 'sprockets'
 gem 'devise'
 
 gem "jquery-rails"
+
+gem 'faker'
+#add 2018.7.26
+gem 'pry', '~> 0.11.3'

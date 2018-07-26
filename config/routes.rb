@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     :registrations => "registrations"
   }
   #2018/07/19,using "show" action,suzuki
-  resources :users, only: [:show]
+  resources :users, only: [:show, :index]
   root 'static_pages#home'
 
   match '/help',    to: 'static_pages#help',    via: 'get'
