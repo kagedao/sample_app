@@ -1,18 +1,19 @@
 class RegistrationsController < Devise::RegistrationsController
 
   def after_sign_up_path_for(resource)
-    user_path(resource)
+      user_path(resource)
   end
   
-  def new
-  end
-  
-  def create
+  #def new
     
-  end
+  #end
   
-  def destroy
-  end
+  #def create
+    
+  #end
+  
+  #def destroy
+  #end
   
   private
 

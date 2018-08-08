@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
-  get 'users/show'
+  #get 'users/show'
 
   devise_for :users, :controllers => {
     :registrations => "registrations"
   }
   #2018/07/19,using "show" action,suzuki
-  resources :users, only: [:show, :index]
+  resources :users, only: [:show, :index, :destroy]
   root 'static_pages#home'
 
   match '/help',    to: 'static_pages#help',    via: 'get'
