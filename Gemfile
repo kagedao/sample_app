@@ -64,3 +64,6 @@ gem "jquery-rails"
 gem 'faker'
 #add 2018.7.26
 gem 'pry', '~> 0.11.3'
+
+gem 'will_paginate', '3.1.6'
+gem 'will_paginate-bootstrap', '1.0.1'
