@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   }
   #2018/07/19,using "show" action,suzuki
   resources :users, only: [:show, :index, :destroy]
+  resources :microposts, only: [:create, :destroy]
   root 'static_pages#home'
 
   match '/help',    to: 'static_pages#help',    via: 'get'

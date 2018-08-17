@@ -5,6 +5,10 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
+  def feed
+    Micropost.where("user_id = ?", id)
+  end
+  
   #validates :name, presence: true, length: { maximum: 50 }
   
   
